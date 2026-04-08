@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import Services from '../components/Services.astro';
+import Benefits from '../components/Benefits.astro';
+import CTASection from '../components/CTASection.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppButton from '../components/react/WhatsAppButton.tsx';
+---
+
+<Layout
+  title="InfraLink Networks — Tecnología confiable para entornos empresariales exigentes"
+  description="InfraLink Networks: soluciones tecnológicas empresariales. Infraestructura, soporte técnico, redes WiFi, cableado estructurado y seguridad CCTV. Contáctenos hoy."
+>
+  <Navbar />
+  <main>
+    <Hero />
+    <Services />
+    <Benefits />
+    <CTASection />
+    <Contact />
+  </main>
+  <Footer />
+  <WhatsAppButton variant="floating" client:load />
+</Layout>

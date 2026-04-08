@@ -1,0 +1,66 @@
+---
+import WhatsAppButton from './react/WhatsAppButton.tsx';
+---
+
+<section class="py-20 relative overflow-hidden">
+  <div class="absolute inset-0" style="background: linear-gradient(135deg, #0f2044 0%, #1a3a6e 50%, #0f2044 100%);"></div>
+
+  <!-- Decorative elements -->
+  <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500/40 to-transparent"></div>
+  <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-green-500/30 to-transparent"></div>
+  <div class="absolute -top-20 -right-20 w-80 h-80 bg-blue-600/15 rounded-full blur-3xl"></div>
+  <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-green-500/10 rounded-full blur-3xl"></div>
+
+  <!-- Grid overlay -->
+  <div class="absolute inset-0 hero-grid opacity-40"></div>
+
+  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-on-scroll">
+
+    <!-- Icon -->
+    <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 shadow-xl shadow-blue-500/30 mb-6">
+      <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+          d="M13 10V3L4 14h7v7l9-11h-7z"/>
+      </svg>
+    </div>
+
+    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-4 leading-tight">
+      Optimiza tu infraestructura
+      <span class="gradient-text block mt-1">tecnológica hoy</span>
+    </h2>
+
+    <p class="text-gray-300 text-base sm:text-lg max-w-xl mx-auto mb-10 leading-relaxed">
+      Estamos listos para analizar sus requerimientos y brindarle una solución eficiente, confiable y alineada a sus objetivos empresariales.
+    </p>
+
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <WhatsAppButton
+        variant="hero"
+        label="Habla con un especialista"
+        client:visible
+      />
+      <a
+        href="mailto:asespinoza97@outlook.com"
+        class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/15 border border-white/20 hover:border-white/30 text-white font-semibold text-base px-8 py-4 rounded-full transition-all duration-300 hover:scale-105"
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+        </svg>
+        Enviar correo
+      </a>
+    </div>
+
+    <!-- Features row -->
+    <div class="flex flex-wrap items-center justify-center gap-6 mt-12 text-sm text-gray-400">
+      {['Sin compromisos', 'Respuesta rápida', 'Diagnóstico gratuito'].map(item => (
+        <div class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+          </svg>
+          <span>{item}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

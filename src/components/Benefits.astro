@@ -1,0 +1,125 @@
+---
+const benefits = [
+  {
+    title: 'Atención rápida y oportuna',
+    description: 'Respondemos con agilidad para minimizar el impacto en su operación empresarial.',
+    icon: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/>`,
+    color: 'from-yellow-500 to-orange-500',
+    glow: 'shadow-yellow-500/20',
+    bg: 'bg-yellow-500/10',
+    border: 'border-yellow-500/20',
+    text: 'text-yellow-400',
+  },
+  {
+    title: 'Soluciones personalizadas',
+    description: 'Analizamos los requerimientos específicos de su empresa para ofrecer la solución ideal.',
+    icon: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>`,
+    color: 'from-blue-500 to-indigo-600',
+    glow: 'shadow-blue-500/20',
+    bg: 'bg-blue-500/10',
+    border: 'border-blue-500/20',
+    text: 'text-blue-400',
+  },
+  {
+    title: 'Garantía directa del fabricante',
+    description: 'Todos nuestros equipos cuentan con garantía oficial, sin intermediarios ni complicaciones.',
+    icon: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>`,
+    color: 'from-green-500 to-emerald-600',
+    glow: 'shadow-green-500/20',
+    bg: 'bg-green-500/10',
+    border: 'border-green-500/20',
+    text: 'text-green-400',
+  },
+  {
+    title: 'Continuidad operativa',
+    description: 'Nuestro compromiso es mantener su infraestructura tecnológica funcionando al máximo rendimiento.',
+    icon: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>`,
+    color: 'from-purple-500 to-violet-600',
+    glow: 'shadow-purple-500/20',
+    bg: 'bg-purple-500/10',
+    border: 'border-purple-500/20',
+    text: 'text-purple-400',
+  },
+];
+---
+
+<section id="por-que" class="py-24 lg:py-32 relative" style="background: linear-gradient(180deg, #0d1e3a 0%, #0a1628 100%);">
+
+  <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <!-- Left: text -->
+      <div class="animate-on-scroll">
+        <span class="inline-block bg-green-500/10 border border-green-500/20 text-green-300 text-sm font-semibold px-4 py-2 rounded-full mb-6">
+          ¿Por qué elegirnos?
+        </span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight mb-6">
+          Más que un proveedor,
+          <span class="gradient-text block mt-1">su aliado tecnológico</span>
+        </h2>
+        <p class="text-gray-400 text-base sm:text-lg leading-relaxed mb-8 max-w-md">
+          En InfraLink Networks nos comprometemos con la calidad, la rapidez y la continuidad de su operación. Nuestro equipo está listo para analizar sus necesidades y brindarle una solución eficiente y confiable.
+        </p>
+
+        <!-- Team badge -->
+        <div class="bg-white/3 border border-white/8 rounded-2xl p-5 space-y-3">
+          <p class="text-xs text-gray-500 uppercase tracking-wider font-semibold">Nuestro equipo profesional</p>
+          <div class="space-y-2.5">
+            {[
+              { name: 'Antony S. Espinoza O.',  initials: 'AE', color: 'from-blue-500 to-blue-700',    title: 'Ing. de Sistemas' },
+              { name: 'Paúl A. Quinde C.',       initials: 'PQ', color: 'from-indigo-500 to-indigo-700', title: 'Ing. de Sistemas' },
+              { name: 'Wilmer E. Miñan P.',      initials: 'WM', color: 'from-cyan-500 to-cyan-700',    title: 'Ing. de Sistemas' },
+              { name: 'Roberto C. Franco H.',    initials: 'RF', color: 'from-purple-500 to-purple-700', title: 'Ing. de Sistemas' },
+              { name: 'Dennisse S. Sanchez A.',  initials: 'DS', color: 'from-pink-500 to-rose-600',    title: 'Ing. en Tecnologías de la Información' },
+            ].map(member => (
+              <div class="flex items-center gap-3">
+                <div class={`flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-br ${member.color} flex items-center justify-center text-white text-xs font-bold shadow-sm`}>
+                  {member.initials}
+                </div>
+                <div class="min-w-0">
+                  <p class="text-white text-sm font-semibold leading-tight">{member.name}</p>
+                  <p class="text-gray-400 text-xs leading-tight">{member.title}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: benefits grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        {benefits.map((benefit, index) => (
+          <div
+            class={`group ${benefit.bg} border ${benefit.border} rounded-2xl p-6 hover:bg-white/5 transition-all duration-300 hover:-translate-y-1 animate-on-scroll`}
+            style={`transition-delay: ${index * 120}ms;`}
+          >
+            <div class={`w-12 h-12 rounded-xl bg-gradient-to-br ${benefit.color} flex items-center justify-center mb-4 shadow-lg ${benefit.glow}`}>
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" set:html={benefit.icon}></svg>
+            </div>
+            <h3 class="text-white font-bold text-sm sm:text-base mb-2 leading-snug">{benefit.title}</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">{benefit.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Bottom metrics bar -->
+    <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 animate-on-scroll">
+      {[
+        { value: 'Empresas', label: 'Confiaron en nosotros', icon: '🏢' },
+        { value: 'Soporte', label: 'Remoto y en sitio', icon: '🛠️' },
+        { value: 'Garantía', label: 'Directa del fabricante', icon: '✅' },
+        { value: 'Rápido', label: 'Tiempo de respuesta', icon: '⚡' },
+      ].map(metric => (
+        <div class="text-center bg-white/3 border border-white/8 rounded-2xl py-6 px-4">
+          <div class="text-3xl mb-2">{metric.icon}</div>
+          <div class="text-xl font-black text-white">{metric.value}</div>
+          <div class="text-gray-400 text-xs mt-1">{metric.label}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
