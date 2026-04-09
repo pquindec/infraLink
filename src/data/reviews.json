@@ -1,0 +1,34 @@
+{
+  "reviews": [
+    {
+      "id": "demo-001",
+      "name": "Carlos Mendoza",
+      "company": "Distribuidora Andina S.A.",
+      "service": "Infraestructura tecnológica",
+      "rating": 5,
+      "comment": "Excelente servicio. Renovaron completamente el equipamiento de nuestra oficina con laptops y servidores de calidad. El proceso fue rápido y sin interrupciones en nuestra operación.",
+      "date": "2026-03-15T10:00:00Z",
+      "approved": true
+    },
+    {
+      "id": "demo-002",
+      "name": "María Elena Torres",
+      "company": "Clínica Santa Rosa",
+      "service": "Redes y telecomunicaciones",
+      "rating": 5,
+      "comment": "Implementaron nuestra red WiFi empresarial con tecnología Mesh. Ahora tenemos cobertura total en todas las áreas. Muy profesionales y puntuales.",
+      "date": "2026-03-22T14:30:00Z",
+      "approved": true
+    },
+    {
+      "id": "demo-003",
+      "name": "Jorge Andrade",
+      "company": "Constructora Pacífico",
+      "service": "Seguridad electrónica",
+      "rating": 5,
+      "comment": "Instalaron el sistema CCTV en nuestras instalaciones. El monitoreo funciona perfecto y el soporte post-instalación ha sido muy oportuno. Totalmente recomendados.",
+      "date": "2026-04-01T09:00:00Z",
+      "approved": true
+    }
+  ]
+}

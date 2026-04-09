@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+.vercel/
+
+# Environment variables — NUNCA subir a git
+.env
+.env.local
+.env.production
+.env.example
+
+# Astro
+.astro/
+
+# Logs
+*.log
+npm-debug.log*
